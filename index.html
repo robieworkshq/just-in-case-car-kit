@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Just in Case Car Kit — RobieWorks</title>
+  <meta name="description" content="A national emergency vehicle kit list from RobieWorks, Version 1.1, with starter, lean, and complete builds, East Tennessee winter notes, a short extreme-summer-heat section, and a printable checklist.">
+  <!-- PINTEREST_CLAIM_TAG: paste the HTML tag from Pinterest Settings → Link to Pinterest → Claim website here. -->
+  <!-- IMPACT_VERIFY_TAG: paste the Impact meta tag or publisher tag here after you apply. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pri: #24505C;
+      --pri-dk: #1A3B44;
+      --acc: #7FA99B;
+      --light: #E6EFEC;
+      --cream: #FBF8F2;
+      --grey: #6F7B80;
+      --gold: #C9973F;
+      --gold-dk: #A67B2C;
+      --txt: #23323A;
+      --white: #ffffff;
+      --soft: #DCE8E4;
+      --banner: #F3E6C8;
+      --line: #d5ddd9;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", "Source Sans Pro", system-ui, sans-serif;
+      color: var(--txt);
+      background: var(--cream);
+      line-height: 1.55;
+    }
+    a { color: var(--pri); }
+    img { max-width: 100%; }
+    .wrap { width: min(1040px, calc(100% - 40px)); margin: 0 auto; }
+    header.site {
+      background: var(--pri);
+      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      box-shadow: 0 2px 12px rgba(26,59,68,.18);
+    }
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+    }
+    .brand {
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: var(--soft);
+      text-decoration: none;
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      opacity: .92;
+    }
+    nav a:hover { text-decoration: underline; }
+    .hero {
+      background: var(--pri);
+      color: var(--white);
+      padding: 56px 0 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      right: -120px;
+      top: -160px;
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 70px rgba(255,255,255,.05), 0 0 0 140px rgba(255,255,255,.04), 0 0 0 210px rgba(255,255,255,.03);
+      pointer-events: none;
+    }
+    .kicker {
+      font-size: 13px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--acc);
+      font-weight: 700;
+      margin: 0 0 12px;
+    }
+    .hero h1 {
+      font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+      font-size: clamp(42px, 8vw, 74px);
+      font-weight: 700;
+      margin: 0 0 12px;
+      line-height: 1.05;
+    }
+    .hero .sub {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-style: italic;
+      font-size: clamp(18px, 2.4vw, 24px);
+      color: var(--soft);
+      max-width: 34em;
+      margin: 0 0 22px;
+    }
+    .pill {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      border-radius: 999px;
+    }
+    .disclosure {
+      background: var(--banner);
+      border: 1px solid #e2d0a4;
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin: -28px auto 36px;
+      position: relative;
+      z-index: 2;
+    }
+    .disclosure h2 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      color: var(--pri-dk);
+    }
+    .disclosure p { margin: 0 0 8px; font-size: 15px; }
+    .disclosure p:last-child { margin-bottom: 0; }
+    .totals {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 18px;
+      margin: 8px 0 48px;
+    }
+    .total-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px 26px;
+      box-shadow: 0 8px 24px rgba(26,59,68,.06);
+    }
+    .total-card h2 {
+      font-family: "Source Serif 4", Georgia, serif;
+      margin: 0 0 6px;
+      font-size: 28px;
+      color: var(--pri);
+    }
+    .total-card .amount {
+      font-size: 40px;
+      font-weight: 700;
+      color: var(--pri-dk);
+      margin: 0 0 8px;
+    }
+    .total-card p { margin: 0; color: var(--grey); }
+    .total-card .amount { font-size: clamp(28px, 3vw, 40px); }
+    .tag-starter { background: #e8d9b0; color: var(--pri-dk); }
+    .starter-list .card { background: #fff; }
+    .starter-where { font-size: 14px; color: var(--grey); margin: 0 0 8px; }
+    .starter-price { font-size: 20px; font-weight: 700; margin: 0 0 8px; }
+    .starter-price span { font-weight: 400; font-size: 14px; color: var(--grey); }
+    .safety-note {
+      background: var(--banner);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 0 0 22px;
+      font-size: 15px;
+    }
+    .no-links { font-size: 14px; color: var(--grey); margin: 0 0 18px; }
+    .section { margin: 0 0 56px; }
+    .section h2 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 34px;
+      color: var(--pri);
+      margin: 0 0 8px;
+    }
+    .lede { margin: 0 0 22px; color: var(--grey); max-width: 46em; }
+    .cards { display: grid; gap: 16px; }
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px 22px 22px;
+    }
+    .card-local { background: #f6f3ec; }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .card h3 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 22px;
+      margin: 0;
+      color: var(--pri-dk);
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      background: var(--light);
+      color: var(--pri);
+      padding: 4px 8px;
+      border-radius: 999px;
+    }
+    .tag-lean { background: var(--soft); }
+    .tag-complete { background: var(--banner); color: var(--pri-dk); }
+    .tag-upgrade { background: var(--pri); color: var(--white); }
+    .product-name { margin: 8px 0 6px; font-weight: 600; }
+    .why { margin: 0 0 10px; }
+    .price-row { margin: 0 0 8px; }
+    .price-row strong { font-size: 20px; margin-right: 8px; }
+    .price-row span { color: var(--grey); font-size: 14px; }
+    .ship { margin: 0 0 10px; font-size: 14px; color: var(--grey); }
+    .buy {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      background: var(--pri);
+      color: var(--white);
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 10px;
+      margin-top: 4px;
+    }
+    .buy:hover { background: var(--pri-dk); }
+    .buy-text { font-weight: 700; font-size: 15px; color: var(--white); }
+    .link-flag { font-size: 11px; color: var(--soft); font-weight: 600; }
+    .buy[data-affiliate="true"] { background: var(--gold-dk); }
+    .upgrade {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px dashed var(--line);
+    }
+    .upgrade-kicker {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--gold-dk);
+      margin-bottom: 4px;
+    }
+    .upgrade-name { font-weight: 700; margin-bottom: 4px; }
+    .winter-panel {
+      background: var(--pri);
+      color: var(--white);
+      border-radius: 18px;
+      padding: 32px 34px;
+      margin: 0 0 56px;
+    }
+    .winter-panel h2 {
+      font-family: "Source Serif 4", Georgia, serif;
+      margin: 0 0 10px;
+      font-size: 30px;
+    }
+    .winter-panel p { margin: 0 0 12px; color: var(--soft); }
+    .winter-panel ul { margin: 0; padding-left: 1.1em; color: var(--soft); }
+    .winter-panel li { margin: 0 0 8px; }
+    .cta, .cross {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 28px;
+      align-items: center;
+      background: var(--white);
+      border-radius: 18px;
+      padding: 28px 32px;
+      border: 1px solid var(--line);
+      margin: 0 0 28px;
+    }
+    .cta { background: var(--pri-dk); color: var(--white); border: 0; }
+    .cta h2, .cross h2 {
+      font-family: "Source Serif 4", Georgia, serif;
+      margin: 0 0 8px;
+      font-size: 30px;
+    }
+    .cta p { color: var(--soft); margin: 0 0 16px; }
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--white);
+      font-weight: 700;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 999px;
+    }
+    .btn.ghost {
+      background: transparent;
+      border: 2px solid var(--acc);
+      color: var(--white);
+    }
+    .cross p { margin: 0 0 14px; }
+    .muted { color: var(--grey); font-size: 14px; }
+    .checks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 0 0 56px;
+    }
+    .checks div {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 20px 22px;
+      border: 1px solid var(--line);
+    }
+    .checks h3 {
+      font-family: "Source Serif 4", Georgia, serif;
+      margin: 0 0 8px;
+      color: var(--pri);
+    }
+    .checks ul { margin: 0; padding-left: 1.1em; }
+    footer.site {
+      background: var(--pri-dk);
+      color: var(--soft);
+      padding: 36px 0 48px;
+      font-size: 14px;
+    }
+    footer.site a { color: var(--acc); }
+    footer.site h2 {
+      color: var(--white);
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+    .pending {
+      display: inline-block;
+      background: var(--banner);
+      color: var(--pri-dk);
+      font-weight: 700;
+      padding: 12px 20px;
+      border-radius: 999px;
+    }
+    @media (max-width: 800px) {
+      .wrap { width: calc(100% - 28px); }
+      .header-row { flex-direction: column; align-items: flex-start; gap: 8px; padding: 12px 0; }
+      nav { gap: 4px 12px; }
+      nav a { font-size: 13px; }
+      .totals { grid-template-columns: 1fr; }
+      .cta, .cross, .checks { grid-template-columns: 1fr; }
+      .hero { padding: 36px 0 48px; }
+      .disclosure { margin-top: -20px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap header-row">
+      <a class="brand" href="#top">RobieWorks</a>
+      <nav>
+        <a href="#builds">Builds</a>
+        <a href="#starter">Starter kit</a>
+        <a href="#kit">Kit list</a>
+        <a href="#winter">Winter &amp; summer</a>
+        <a href="#printable">Printable</a>
+        <a href="#organizer">Family organizer</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <p class="kicker">Emergency car survival kit</p>
+      <h1>Just in Case Car Kit</h1>
+      <p class="sub">A national list of what to keep in the vehicle, with a clear East Tennessee and mountain winter section — so you can build a kit on a weekend, not a shopping spiral.</p>
+      <span class="pill">Starting at $135, plus additional supplies · Estimated $283 · Estimated $410</span>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <aside class="disclosure" id="disclosure">
+      <h2>Please read this first</h2>
+      <p><strong>Affiliate links:</strong> The Starter kit section below has no product links. In the lean and complete lists, some links go to retailer product pages so you can see a real item and an approximate price. They are ordinary retail links for now. When RobieWorks is accepted into an affiliate program, some of these links may become affiliate links. If you buy through an affiliate link, RobieWorks may earn a commission, at no extra cost to you. That commission will be disclosed next to the link. This page is not sponsored by any retailer.</p>
+      <p><strong>How this page was made:</strong> This printable was developed by RobieWorks with AI-assisted research and drafting, drawing on publicly available emergency preparedness guidance. The same is true of this page. This guide is for general information only. It is not medical, legal, or automotive-repair advice, and it is not a substitute for your vehicle owner’s manual, official emergency guidance, or roadside assistance. Use your own judgment. Informational source links are listed in the Sources section, separate from the shopping links in the kit list.</p>
+      <p><strong>Not medical or legal advice</strong>, and not a substitute for roadside assistance. A kit helps you wait for help and handle small problems. It does not make winter mountain driving, or travel in extreme heat, safe. Prices are approximate, pre-tax, and were spot-checked on product pages on November 25, 2026, Eastern Time. Harbor Freight starter prices were checked on product pages that day. They will change. Unverified items say “check current price” and are left out of the totals. Shipping is extra unless a product page said otherwise.</p>
+    </aside>
+
+    <section class="section" id="builds">
+      <h2>Three ways to build the kit</h2>
+      <p class="lede">All three builds include basic food and water, and aim to cover the official essentials, including winter gear. The starter kit uses budget-friendly Harbor Freight items and Temu or grocery add-ons, with honest notes where a bargain item is a weaker substitute. The lean and complete kits use the name-brand examples in the shopping list below. The complete kit adds a NOAA weather radio, a two-person / three-day food and water pack, a multi-tool, and a waterproof pouch. Totals are merchandise prices only, before tax and shipping.</p>
+      <div class="totals">
+        <div class="total-card" id="starter-total">
+          <h2>Starter kit</h2>
+          <p class="amount">Starting at $135</p>
+          <p>Plus additional supplies. The $134.69 figure is only the 11 priced Harbor Freight items, as of November 25, 2026, Eastern Time. Temu, grocery, and either/local items — including water and snacks — say “check current price” and are not in this total.</p>
+        </div>
+        <div class="total-card">
+          <h2>Lean kit</h2>
+          <p class="amount">Estimated $283</p>
+          <p>$283.12 before tax and shipping, including basic bottled water. Visibility, power, winter tools, first aid, an inflator, sealant, a rated extinguisher with a bracket, tape, a vest, gloves, a poncho, and a Mylar blanket. Snacks are essential and listed as “check current price.”</p>
+        </div>
+        <div class="total-card">
+          <h2>Complete kit</h2>
+          <p class="amount">Estimated $410</p>
+          <p>$409.64 before tax and shipping. Everything in the lean kit, plus a NOAA weather radio (receive-only), a 2-person / 3-day food and water pack, a multi-tool, and a document pouch.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="supplies">
+      <h2>Essential, recommended, and optional supplies</h2>
+      <p class="lede">These lists follow official kit guidance from Ready.gov (Car Safety and Build A Kit), AAA’s vehicle emergency kit list, the American Red Cross “Emergency Car Kit” article, and NHTSA’s winter and summer “stock your vehicle” lists. The three builds below are ways to cover the essentials and, as you add items, the recommended supplies.</p>
+      <div class="checks">
+        <div>
+          <h3>Essential</h3>
+          <ul>
+            <li>A charged phone, plus a vehicle charger and/or power bank</li>
+            <li>A first-aid kit, and any personal medicines you need (within label temperature limits)</li>
+            <li>A flashlight, plus spare batteries where applicable</li>
+            <li>A tire pressure gauge</li>
+            <li>Warm winter clothing</li>
+            <li>Warning devices: reflective triangles or flares</li>
+            <li>Jumper cables</li>
+            <li>Drinking water and non-perishable food or snacks</li>
+            <li>A blanket (a compact Mylar blanket, a cloth blanket, or both)</li>
+            <li>An ice scraper, in places that see ice or snow</li>
+            <li>A map, even if you also use a phone GPS</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Recommended</h3>
+          <ul>
+            <li>A compact shovel, and a traction aid such as sand, salt, or non-clumping cat litter</li>
+            <li>A tire inflator and a temporary tire sealant</li>
+            <li>Work or winter gloves, and a rain poncho</li>
+            <li>A high-visibility safety vest</li>
+            <li>A NOAA weather radio — it receives alerts but generally cannot transmit a distress signal</li>
+            <li>An appropriately rated fire extinguisher suitable for vehicle storage, secured with an appropriate mounting bracket (in a vehicle fire, evacuate, move away and call 911; prioritize personal safety)</li>
+            <li>Duct tape: “For temporary, non-critical repairs, such as securing loose interior trim.”</li>
+            <li>A multi-tool or basic tool kit, wipes or paper towels, and a little cash</li>
+            <li>Windshield washer fluid</li>
+            <li>A high-visibility distress flag</li>
+            <li>Sturdy walking shoes</li>
+          </ul>
+        </div>
+      </div>
+      <div class="checks" style="margin-top:16px">
+        <div>
+          <h3>Optional</h3>
+          <ul>
+            <li>A lithium jump starter, stored only as the manufacturer instructs</li>
+            <li>A wool or heavy blanket, in addition to a Mylar blanket</li>
+            <li>A tow or recovery strap rated for your vehicle</li>
+            <li>A road atlas, beyond a basic folded map</li>
+            <li>Hand warmers, a whistle, and a change of clothes</li>
+            <li>A seat belt cutter and compatible window escape tool</li>
+            <li>A pen and notepad</li>
+            <li>Sunscreen</li>
+            <li>A waterproof document pouch</li>
+            <li>Pet food and extra water, if a pet rides with you</li>
+            <li>Books, games, or puzzles for children</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Food and water in every build</h3>
+          <p>The starter kit uses grocery water and snacks at current prices (not in the $135 starting total). The lean kit includes a verified case of bottled water; pack several bottles in the vehicle and rotate them, and add snacks at current prices. The complete kit also includes a two-person / three-day food and water pack.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section starter-list" id="starter">
+      <h2>Starter kit</h2>
+      <p class="lede">A basic entry-level build of budget-friendly tools you can find at Harbor Freight or on Temu, plus a few grocery and local pickups. There are no product links in this section. Harbor Freight prices below were taken from product pages fetched on November 25, 2026, Eastern Time, and are approximate. Temu and grocery prices could not be independently verified and may fluctuate, so those items say “check current price” rather than a made-up number.</p>
+      <p class="no-links">Starting at $135, plus additional supplies. The $134.69 figure is only the 11 priced Harbor Freight items. It does not include water, snacks, or other Temu, grocery, or either/local items.</p>
+      <div class="safety-note">
+        <strong>Lithium batteries.</strong> Follow manufacturer storage and charging temperature limits for lithium devices. Remove devices from parked vehicles when temperatures may exceed those limits. Secure devices during travel. Follow manufacturer recharge intervals. Be cautious with no-name units that do not list safety certifications. This starter kit uses jumper cables, not a bargain jump starter, for that reason. A 12-volt tire inflator that plugs into the vehicle also will not help if the battery is already dead.
+      </div>
+      <div class="cards">
+    <article class="card" id="starter-triangles-dot">
+      <div class="card-top">
+        <h3>DOT warning triangles, 3-pack</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">Warning triangles, 3-pack (look for DOT-rated)</p>
+      <p class="why">Official lists call for warning triangles or flares so other drivers can see a stopped vehicle in time. Look for a 3-pack that is actually DOT-rated — many bargain sets are not. Harbor Freight did not appear to sell a DOT triangle set when this list was checked.</p>
+      <p class="starter-where">Where to find it: Temu or a local auto-parts aisle</p>
+      <p class="starter-price">check current price <span>approximate · no verified price for this draft</span></p>
+    </article>
+    <article class="card" id="starter-cone">
+      <div class="card-top">
+        <h3>Collapsible reflective emergency cone</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">WESTERN SAFETY collapsible reflective emergency cone</p>
+      <p class="why">A weaker substitute for a 3-pack of DOT-rated warning triangles. This is one 15-1/2 inch cone, not a triangle set, and it is light. Useful on a quiet street or shoulder; it is not a highway-grade warning triangle. Upgrade to a DOT 3-pack when you can.</p>
+      <p class="starter-where">Where to find it: Harbor Freight</p>
+      <p class="starter-price">about $12.99 <span>approximate · verified Harbor Freight page, Nov 25, 2026, ET</span></p>
+    </article>
+    <article class="card" id="starter-flashlight">
+      <div class="card-top">
+        <h3>Flashlight</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">BRAUN 800 lumen tactical LED flashlight</p>
+      <p class="why">You may need light to change a tire, read a gauge, or signal. This model includes batteries. Keep it where you can reach it without emptying the trunk.</p>
+      <p class="starter-where">Where to find it: Harbor Freight</p>
+      <p class="starter-price">about $11.99 <span>approximate · verified Harbor Freight page, Nov 25, 2026, ET</span></p>
+    </article>
+    <article class="card" id="starter-cables">
+      <div class="card-top">
+        <h3>Jumper cables</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">PITTSBURGH 12 ft., 10-gauge jumper cables</p>
+      <p class="why">A cheaper, thinner set than the 4-gauge cables in the lean kit. These are copper-coated aluminum, rated 150 amps, and they need a second vehicle. They may struggle in deep cold or on a larger engine. For a first kit, cables like these are a safer choice than a bargain lithium jump starter.</p>
+      <p class="starter-where">Where to find it: Harbor Freight</p>
+      <p class="starter-price">about $9.99 <span>approximate · verified Harbor Freight page, Nov 25, 2026, ET</span></p>
+    </article>
+    <article class="card" id="starter-powerbank">
+      <div class="card-top">
+        <h3>Phone power bank</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">Phone power bank</p>
+      <p class="why">A vehicle charger does not help if the vehicle battery is dead. Follow manufacturer storage and charging temperature limits. Remove it from a parked vehicle when temperatures may exceed those limits, and secure it during travel. Be cautious with no-name lithium packs.</p>
+      <p class="starter-where">Where to find it: Temu or another retailer</p>
+      <p class="starter-price">check current price <span>approximate · no verified price for this draft</span></p>
+    </article>
+    <article class="card" id="starter-charger">
+      <div class="card-top">
+        <h3>Car charger and spare cable</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">12-volt USB car charger and a spare cable</p>
+      <p class="why">Still useful when the car will start. A simple charger from a grocery, dollar, or electronics aisle is enough.</p>
+      <p class="starter-where">Where to find it: Either or local</p>
+      <p class="starter-price">check current price <span>approximate · no verified price for this draft</span></p>
+    </article>
+    <article class="card" id="starter-firstaid">
+      <div class="card-top">
+        <h3>First-aid kit</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">BE SMART GET PREPARED 10-person, 101-piece first-aid kit</p>
+      <p class="why">This is a workplace-style kit, not an auto-specific kit. Cheap kits vary in quality and completeness. Check dates, add your own medicines, and know that the kit’s ANSI claim applies only when the required minimum fill is maintained.</p>
+      <p class="starter-where">Where to find it: Harbor Freight</p>
+      <p class="starter-price">about $19.99 <span>approximate · verified Harbor Freight page, Nov 25, 2026, ET</span></p>
+    </article>
+    <article class="card" id="starter-vest">
+      <div class="card-top">
+        <h3>Safety vest</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">WESTERN SAFETY yellow reflective safety vest, Large</p>
+      <p class="why">So you can be seen if you step onto a shoulder. The Harbor Freight listing says the reflective strips meet or exceed ANSI safety standards and the vest is ANSI compliant. Confirm the size before you buy.</p>
+      <p class="starter-where">Where to find it: Harbor Freight</p>
+      <p class="starter-price">about $7.99 <span>approximate · verified Harbor Freight page, Nov 25, 2026, ET</span></p>
+    </article>
+    <article class="card" id="starter-scraper">
+      <div class="card-top">
+        <h3>Ice scraper and snow brush</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">Ice scraper and snow brush</p>
+      <p class="why">The everyday winter tool on official lists. Harbor Freight did not show a dedicated car ice scraper when this list was checked. Look on Temu or in a grocery or auto-parts aisle.</p>
+      <p class="starter-where">Where to find it: Temu or a grocery / auto-parts aisle</p>
+      <p class="starter-price">check current price <span>approximate · no verified price for this draft</span></p>
+    </article>
+    <article class="card" id="starter-shovel">
+      <div class="card-top">
+        <h3>Compact folding shovel</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">BADLAND foldable utility shovel</p>
+      <p class="why">A compact folding utility shovel with a plastic handle. Fine for light snow, slush, or mud around the tires, but it is not a full-size snow shovel.</p>
+      <p class="starter-where">Where to find it: Harbor Freight</p>
+      <p class="starter-price">about $14.99 <span>approximate · verified Harbor Freight page, Nov 25, 2026, ET</span></p>
+    </article>
+    <article class="card" id="starter-litter">
+      <div class="card-top">
+        <h3>Traction aid (litter or sand)</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">Non-clumping cat litter or sand</p>
+      <p class="why">Official winter lists recommend sand, salt, or non-clumping cat litter for tire traction. Buy a small bag locally. Avoid clumping litter.</p>
+      <p class="starter-where">Where to find it: Local</p>
+      <p class="starter-price">check current price <span>approximate · no verified price for this draft</span></p>
+    </article>
+    <article class="card" id="starter-poncho">
+      <div class="card-top">
+        <h3>Rain poncho</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">Rain poncho</p>
+      <p class="why">For changing a tire or setting out a cone or triangles in rain or sleet.</p>
+      <p class="starter-where">Where to find it: Temu</p>
+      <p class="starter-price">check current price <span>approximate · no verified price for this draft</span></p>
+    </article>
+    <article class="card" id="starter-gloves">
+      <div class="card-top">
+        <h3>Work gloves</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">HARDY ANSI A5 cut-resistant work gloves, Large</p>
+      <p class="why">Better than bare hands for a tire change or a shovel. These are work gloves, not insulated winter gloves — add a warm pair for a freeze.</p>
+      <p class="starter-where">Where to find it: Harbor Freight</p>
+      <p class="starter-price">about $5.99 <span>approximate · verified Harbor Freight page, Nov 25, 2026, ET</span></p>
+    </article>
+    <article class="card" id="starter-blanket-moving">
+      <div class="card-top">
+        <h3>Moving blanket</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">FRANKLIN 40 in. x 50 in. moving blanket</p>
+      <p class="why">A cheap warmth or ground layer for the trunk. Harbor Freight says this moving blanket is not intended for use as bedding. It is not a purpose-made emergency blanket, so also pack a Mylar blanket if you can.</p>
+      <p class="starter-where">Where to find it: Harbor Freight</p>
+      <p class="starter-price">about $3.79 <span>approximate · verified Harbor Freight page, Nov 25, 2026, ET</span></p>
+    </article>
+    <article class="card" id="starter-blanket-mylar">
+      <div class="card-top">
+        <h3>Emergency Mylar blanket</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">Emergency Mylar blanket</p>
+      <p class="why">Official lists include an emergency blanket to hold body heat. Temu often sells these inexpensively, but prices could not be independently verified and may fluctuate — check the current price.</p>
+      <p class="starter-where">Where to find it: Temu</p>
+      <p class="starter-price">check current price <span>approximate · no verified price for this draft</span></p>
+    </article>
+    <article class="card" id="starter-inflator">
+      <div class="card-top">
+        <h3>Portable tire inflator</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">PITTSBURGH 12V portable tire inflator with LED light</p>
+      <p class="why">A budget 12-volt inflator for a low tire, so you can reach a shop. It plugs into the vehicle’s 12-volt port, so it will not help if the vehicle battery is dead. Use the pressure on the door jamb. A member sale was listed on a category page the same day; the product page price used here is $16.99.</p>
+      <p class="starter-where">Where to find it: Harbor Freight</p>
+      <p class="starter-price">about $16.99 <span>approximate · verified Harbor Freight page, Nov 25, 2026, ET</span></p>
+    </article>
+    <article class="card" id="starter-extinguisher">
+      <div class="card-top">
+        <h3>Fire extinguisher</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">FIRST ALERT 2.5 lb. garage/workshop fire extinguisher</p>
+      <p class="why">An appropriately rated 1-A:10-B:C unit suitable for vehicle storage, not a compact auto extinguisher. Secure it using an appropriate mounting bracket. In a vehicle fire, evacuate, move away and call 911; prioritize personal safety.</p>
+      <p class="starter-where">Where to find it: Harbor Freight</p>
+      <p class="starter-price">about $24.99 <span>approximate · verified Harbor Freight page, Nov 25, 2026, ET</span></p>
+    </article>
+    <article class="card" id="starter-tape">
+      <div class="card-top">
+        <h3>Duct tape</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">STIKTEK 50 yd. x 1.88 in. cloth-back silver duct tape</p>
+      <p class="why">For temporary, non-critical repairs, such as securing loose interior trim.</p>
+      <p class="starter-where">Where to find it: Harbor Freight</p>
+      <p class="starter-price">about $4.99 <span>approximate · verified Harbor Freight page, Nov 25, 2026, ET</span></p>
+    </article>
+    <article class="card" id="starter-whistle">
+      <div class="card-top">
+        <h3>Whistle</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">Whistle</p>
+      <p class="why">Ready.gov lists a whistle to signal for help. A simple pea-less whistle is enough.</p>
+      <p class="starter-where">Where to find it: Temu or local</p>
+      <p class="starter-price">check current price <span>approximate · no verified price for this draft</span></p>
+    </article>
+    <article class="card" id="starter-water">
+      <div class="card-top">
+        <h3>Drinking water</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">Drinking water</p>
+      <p class="why">Essential in all three builds. Pack several bottles and rotate them. Move them into the cabin in a hard freeze, and do not leave them to overheat.</p>
+      <p class="starter-where">Where to find it: Grocery</p>
+      <p class="starter-price">check current price <span>approximate · no verified price for this draft</span></p>
+    </article>
+    <article class="card" id="starter-snacks">
+      <div class="card-top">
+        <h3>Non-perishable snacks</h3>
+        <div class="tags"><span class="tag tag-starter">Starter kit</span></div>
+      </div>
+      <p class="product-name">Non-perishable snacks</p>
+      <p class="why">Essential in all three builds. Granola bars or other shelf-stable food. Check dates on your refresh schedule.</p>
+      <p class="starter-where">Where to find it: Grocery</p>
+      <p class="starter-price">check current price <span>approximate · no verified price for this draft</span></p>
+    </article>
+      </div>
+    </section>
+
+    <div id="kit">
+      
+    <section class="section" id="essentials">
+      <h2>Essentials</h2>
+      <p class="lede">visibility, power, and communication</p>
+      <div class="cards">
+    <article class="card" id="triangles-budget">
+      <div class="card-top">
+        <h3>Warning triangles</h3>
+        <div class="tags"><span class="tag tag-lean">Lean kit</span><span class="tag tag-complete">Also in complete</span></div>
+      </div>
+      <p class="product-name">Performance Tool W1498 DOT Warning Triangle, 3-pack</p>
+      <p class="why">If your car is stopped, other drivers need to see you in time. Official lists call for flares or a reflective triangle. Reusable DOT-style triangles avoid storing burning flares in a hot trunk.</p>
+      <div class="price-row"><strong>$26.41</strong> <span>at Walmart · pre-tax, as of Nov 24–25, 2026</span></div>
+      <p class="ship">This lookup also showed $6.99 shipping unless the order meets a free-shipping threshold.</p>
+      <a class="buy" data-item-id="triangles-budget" href="https://www.walmart.com/ip/Performance-Tool-W1498-DOT-Warning-Triangle-3-pack/629398530" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Walmart</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+        <div class="upgrade">
+          <div class="upgrade-kicker">Upgrade option</div>
+          <div class="upgrade-name">Orion Safety Products DOT-compliant triangles, 3-pack, model 461</div>
+          <div class="price-row"><strong>$42.99</strong> <span>at O&#x27;Reilly Auto Parts</span></div>
+          <p>A well-known DOT-compliant set if you want a heavier, more established brand than the budget pack.</p>
+          <a class="buy" data-item-id="triangles-upgrade" href="https://www.oreillyauto.com/detail/c/orion-safety-products/orion-safety-products-dot-reflective-triangle/orn0/461" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at O&#x27;Reilly Auto Parts</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+        </div>
+    </article>
+    <article class="card" id="flashlight-budget">
+      <div class="card-top">
+        <h3>Flashlight</h3>
+        <div class="tags"><span class="tag tag-lean">Lean kit</span><span class="tag tag-complete">Also in complete</span></div>
+      </div>
+      <p class="product-name">Energizer LED Rechargeable Flashlight, 350 lumens, with USB cable</p>
+      <p class="why">You may need light to change a tire, read a gauge, or signal. Keep it where you can reach it without emptying the trunk.</p>
+      <div class="price-row"><strong>$10.66</strong> <span>at Walmart · pre-tax, as of Nov 24–25, 2026</span></div>
+      
+      <a class="buy" data-item-id="flashlight-budget" href="https://www.walmart.com/ip/12102814275" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Walmart</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+        <div class="upgrade">
+          <div class="upgrade-kicker">Upgrade option</div>
+          <div class="upgrade-name">Energizer Tac-R 3000-lumen compact tactical LED flashlight, USB-C rechargeable</div>
+          <div class="price-row"><strong>$25.77</strong> <span>at Walmart</span></div>
+          <p>A brighter, sturdier light if you often drive at night or want more reserve brightness.</p>
+          <a class="buy" data-item-id="flashlight-upgrade" href="https://www.walmart.com/ip/17699920906" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Walmart</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+        </div>
+    </article>
+    <article class="card" id="cables-budget">
+      <div class="card-top">
+        <h3>Jumper cables</h3>
+        <div class="tags"><span class="tag tag-lean">Lean kit</span><span class="tag tag-complete">Also in complete</span></div>
+      </div>
+      <p class="product-name">Greatway / Kobalt 12-ft, 4-gauge jumper cables</p>
+      <p class="why">Dead batteries are a common roadside problem, especially in the cold. Cables work when a second vehicle can help.</p>
+      <div class="price-row"><strong>$31.88</strong> <span>at Lowe&#x27;s · pre-tax, as of Nov 24–25, 2026</span></div>
+      <p class="ship">Free shipping in the Nov 24 lookup.</p>
+      <a class="buy" data-item-id="cables-budget" href="https://www.lowes.com/pd/GREATWAY-Jumper-Cable-12-ft-4-Gauge-Standard-Jumper-Cable/1000107261" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Lowe&#x27;s</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+        <div class="upgrade">
+          <div class="upgrade-kicker">Upgrade option</div>
+          <div class="upgrade-name">NOCO Boost GB40, 1000A lithium jump starter</div>
+          <div class="price-row"><strong>$99.95</strong> <span>at Best Buy</span></div>
+          <p>Works when no second vehicle is available, which matters on a quiet road at night. Rated for gasoline engines up to 6.0L and diesel up to 3.0L. Recharge it every few months.</p>
+          <a class="buy" data-item-id="jumpstarter-upgrade" href="https://www.bestbuy.com/product/noco-boost-gb40-1000a-ultrasafe-12v-lithium-jump-starter-portable-battery-booster-pack-for-6-0l-gas-3-0l-diesel/J7GRLJ2QJ7" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Best Buy</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+        </div>
+    </article>
+    <article class="card" id="powerbank-budget">
+      <div class="card-top">
+        <h3>Phone power bank</h3>
+        <div class="tags"><span class="tag tag-lean">Lean kit</span><span class="tag tag-complete">Also in complete</span></div>
+      </div>
+      <p class="product-name">Energizer 10,000mAh 22.5W 4-port power bank with built-in USB-C cables</p>
+      <p class="why">A car charger does not help if the vehicle battery is dead. Keep a charged power bank in the cabin, not in an extremely hot or cold vehicle interior.</p>
+      <div class="price-row"><strong>$32.85</strong> <span>at Best Buy · pre-tax, as of Nov 24–25, 2026</span></div>
+      
+      <a class="buy" data-item-id="powerbank-budget" href="https://www.bestbuy.com/site/questions/energizer-10000mah-22-5w-4-port-universal-fast-charging-power-bank-portable-charger-w-2-built-in-pd-usb-c-cables-led-display-black/12373836" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Best Buy</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+    </article>
+    <article class="card" id="radio-complete">
+      <div class="card-top">
+        <h3>NOAA weather radio</h3>
+        <div class="tags"><span class="tag tag-complete">Complete kit add-on</span></div>
+      </div>
+      <p class="product-name">Midland ER10VP compact emergency weather-alert radio</p>
+      <p class="why">A NOAA weather radio receives alerts but generally cannot transmit a distress signal. A whistle or light may help signal nearby rescuers.</p>
+      <div class="price-row"><strong>$39.99</strong> <span>at Midland · pre-tax, as of Nov 24–25, 2026</span></div>
+      <p class="ship">The Nov 24 product description also said the ER10 might be temporarily out of stock. Confirm stock before you buy.</p>
+      <a class="buy" data-item-id="radio-complete" href="https://midlandusa.com/products/er10vp-eready-compact-emergency-alert-am-fm-weather-radio" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Midland</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+        <div class="upgrade">
+          <div class="upgrade-kicker">Upgrade option</div>
+          <div class="upgrade-name">Midland ER310 E+Ready emergency crank weather radio</div>
+          <div class="price-row"><strong>$79.99</strong> <span>at BlueDogInk</span></div>
+          <p>A crank and solar model with a light, if you want a radio that does not depend only on a stored charge.</p>
+          <a class="buy" data-item-id="radio-upgrade" href="https://www.bluedogink.com/midland-er310-e-ready-emergency-crank-weather-radio.html" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at BlueDogInk</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+        </div>
+    </article>
+    <article class="card" id="vest-budget">
+      <div class="card-top">
+        <h3>Safety vest</h3>
+        <div class="tags"><span class="tag tag-lean">Lean kit</span><span class="tag tag-complete">Also in complete</span></div>
+      </div>
+      <p class="product-name">Safety Works yellow high-visibility reflective vest, ANSI/ISEA Type R Class 2</p>
+      <p class="why">You need to be seen if you step out of the car at night, in fog, or on a shoulder.</p>
+      <div class="price-row"><strong>$24.98</strong> <span>at Lowe&#x27;s · pre-tax, as of Nov 24–25, 2026</span></div>
+      
+      <a class="buy" data-item-id="vest-budget" href="https://www.lowes.com/pd/Safety-Works-One-Size-Fits-Most-Yellow-Polyester-High-Visibility-ANSI-Compliant-Reflective-Safety-Vest/1000990902" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Lowe&#x27;s</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+    </article>
+    <article class="card card-local">
+      <div class="card-top">
+        <h3>12-volt USB car charger and a spare cable</h3>
+        <div class="tags"><span class="tag">Buy locally · price unverified</span></div>
+      </div>
+      <p class="why">Still useful when the car will start. A simple name-brand charger is enough. Price was not verified on a specific product page for this draft.</p>
+    </article>
+    <article class="card card-local">
+      <div class="card-top">
+        <h3>Whistle</h3>
+        <div class="tags"><span class="tag">Buy locally · price unverified</span></div>
+      </div>
+      <p class="why">Ready.gov lists a whistle to signal for help. A simple pea-less whistle from a sporting-goods aisle is enough.</p>
+    </article></div>
+    </section>
+    <section class="section" id="winter">
+      <h2>Winter gear</h2>
+      <p class="lede">for ice, snow, rain, and waiting in the cold — anywhere in the country</p>
+      <div class="cards">
+    <article class="card" id="scraper-budget">
+      <div class="card-top">
+        <h3>Ice scraper and snow brush</h3>
+        <div class="tags"><span class="tag tag-lean">Lean kit</span><span class="tag tag-complete">Also in complete</span></div>
+      </div>
+      <p class="product-name">YeewayVeh 35-inch 2-in-1 snow brush and ice scraper</p>
+      <p class="why">The everyday winter tool. Official lists all include an ice scraper.</p>
+      <div class="price-row"><strong>$11.99</strong> <span>at Amazon · pre-tax, as of Nov 24–25, 2026</span></div>
+      
+      <a class="buy" data-item-id="scraper-budget" href="https://www.amazon.com/dp/B0BFPVNQFN" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Amazon</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+        <div class="upgrade">
+          <div class="upgrade-kicker">Upgrade option</div>
+          <div class="upgrade-name">JOYTUTUS 41.5-inch extendable snow brush and ice scraper</div>
+          <div class="price-row"><strong>$21.84</strong> <span>at Amazon</span></div>
+          <p>A longer, extendable brush is easier on a taller vehicle or a wider windshield.</p>
+          <a class="buy" data-item-id="scraper-upgrade" href="https://www.amazon.com/dp/B0CF89WS7H" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Amazon</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+        </div>
+    </article>
+    <article class="card" id="shovel-budget">
+      <div class="card-top">
+        <h3>Compact car shovel</h3>
+        <div class="tags"><span class="tag tag-lean">Lean kit</span><span class="tag tag-complete">Also in complete</span></div>
+      </div>
+      <p class="product-name">Suncast 11-inch telescoping car snow shovel</p>
+      <p class="why">You need to dig snow, slush, or mud away from the tires. It does not have to clear a driveway.</p>
+      <div class="price-row"><strong>$19.98</strong> <span>at Lowe&#x27;s · pre-tax, as of Nov 24–25, 2026</span></div>
+      <p class="ship">This lookup also showed $5.99 shipping unless the order meets a free-shipping threshold.</p>
+      <a class="buy" data-item-id="shovel-budget" href="https://www.lowes.com/pd/Suncast-11-in-Plastic-Snow-Shovel-with-38-25-in-Aluminum-Handle/5013653165" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Lowe&#x27;s</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+        <div class="upgrade">
+          <div class="upgrade-kicker">Upgrade option</div>
+          <div class="upgrade-name">Michelin Ultra Compact telescoping utility snow shovel</div>
+          <div class="price-row"><strong>$40.99</strong> <span>at Home Depot</span></div>
+          <p>A sturdier compact shovel if you often park where snow piles against the tires.</p>
+          <a class="buy" data-item-id="shovel-upgrade" href="https://www.homedepot.com/p/Michelin-Ultra-Compact-40-in-Folding-Utility-Snow-Shovel-for-Car-Emergency-Telescoping-Handle-19188-2/318607007" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Home Depot</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+        </div>
+    </article>
+    <article class="card" id="poncho-budget">
+      <div class="card-top">
+        <h3>Rain poncho</h3>
+        <div class="tags"><span class="tag tag-lean">Lean kit</span><span class="tag tag-complete">Also in complete</span></div>
+      </div>
+      <p class="product-name">Emergency thermal rain poncho, hooded</p>
+      <p class="why">You may have to change a tire or set out triangles in the rain or sleet.</p>
+      <div class="price-row"><strong>$13.99</strong> <span>at Walmart · pre-tax, as of Nov 24–25, 2026</span></div>
+      <p class="ship">Marketplace seller in this lookup; confirm the seller if you order online.</p>
+      <a class="buy" data-item-id="poncho-budget" href="https://www.walmart.com/ip/Emergency-Thermal-Rain-Poncho-Waterproof-Mylar-Survival-Blanket-With-Reflective-Heat-Retention-Lining-Windproof-Hooded-Raincoat-And-Lightweight-Folda/21394268749" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Walmart</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+    </article>
+    <article class="card" id="gloves-budget">
+      <div class="card-top">
+        <h3>Warm work gloves</h3>
+        <div class="tags"><span class="tag tag-lean">Lean kit</span><span class="tag tag-complete">Also in complete</span></div>
+      </div>
+      <p class="product-name">toolant winter leather work gloves with 3M Thinsulate lining</p>
+      <p class="why">Bare hands on a frozen scraper, shovel, or lug wrench go numb quickly. Confirm size before you buy.</p>
+      <div class="price-row"><strong>$16.14</strong> <span>at Amazon · pre-tax, as of Nov 24–25, 2026</span></div>
+      
+      <a class="buy" data-item-id="gloves-budget" href="https://www.amazon.com/dp/B0B6V45ZBM" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Amazon</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+    </article>
+    <article class="card" id="blanket-budget">
+      <div class="card-top">
+        <h3>Emergency blanket</h3>
+        <div class="tags"><span class="tag tag-lean">Lean kit</span><span class="tag tag-complete">Also in complete</span></div>
+      </div>
+      <p class="product-name">Ozark Trail reusable emergency survival blanket</p>
+      <p class="why">Mylar-style blankets pack small and help hold body heat if you are waiting in a cold vehicle.</p>
+      <div class="price-row"><strong>$4.78</strong> <span>at Walmart · pre-tax, as of Nov 24–25, 2026</span></div>
+      
+      <a class="buy" data-item-id="blanket-budget" href="https://www.walmart.com/ip/336932569" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Walmart</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+        <div class="upgrade">
+          <div class="upgrade-kicker">Upgrade option</div>
+          <div class="upgrade-name">Molithe 100% wool blanket, 62 x 86 in.</div>
+          <div class="price-row"><strong>$49.99</strong> <span>at Amazon</span></div>
+          <p>A real wool blanket is more comfortable than Mylar if you may be waiting for hours.</p>
+          <a class="buy" data-item-id="blanket-upgrade" href="https://www.amazon.com/dp/B0GVF189ZK" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Amazon</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+        </div>
+    </article>
+    <article class="card card-local">
+      <div class="card-top">
+        <h3>Non-clumping cat litter or sand</h3>
+        <div class="tags"><span class="tag">Buy locally · price unverified</span></div>
+      </div>
+      <p class="why">Official winter lists recommend sand, salt, or non-clumping cat litter for tire traction. Buy a small bag locally. Clumping litter can turn to mush when wet.</p>
+    </article>
+    <article class="card card-local">
+      <div class="card-top">
+        <h3>Hand warmers</h3>
+        <div class="tags"><span class="tag">Buy locally · price unverified</span></div>
+      </div>
+      <p class="why">Air-activated warmers are a common winter add-on. They expire, so check the date.</p>
+    </article></div>
+    </section>
+    <section class="section" id="first">
+      <h2>First aid</h2>
+      <p class="lede">a basic kit, plus your own medicines</p>
+      <div class="cards">
+    <article class="card" id="firstaid-budget">
+      <div class="card-top">
+        <h3>Auto first-aid kit</h3>
+        <div class="tags"><span class="tag tag-lean">Lean kit</span><span class="tag tag-complete">Also in complete</span></div>
+      </div>
+      <p class="product-name">First Aid Only / American Red Cross Auto First Aid Kit (about 40–42 pieces)</p>
+      <p class="why">Every official list includes a first-aid kit for cuts, scrapes, and basic care. This is not medical advice. Add your own medicines and check expiration dates twice a year.</p>
+      <div class="price-row"><strong>$12.95</strong> <span>at Rescue Supply · pre-tax, as of Nov 24–25, 2026</span></div>
+      <p class="ship">The official Red Cross store listed the same kit at $12.50 but with $27.80 shipping in the Nov 24 lookup, so this page uses Rescue Supply.</p>
+      <a class="buy" data-item-id="firstaid-budget" href="https://rescue-supply.com/products/first-aid-only-american-red-cross-auto-first-aid-kit" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Rescue Supply</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+        <div class="upgrade">
+          <div class="upgrade-kicker">Upgrade option</div>
+          <div class="upgrade-name">American Red Cross Emergency Preparedness Auto Kit with first aid (soft case)</div>
+          <div class="price-row"><strong>$37.23</strong> <span>at Grainger</span></div>
+          <p>A larger auto kit if you want more supplies in one soft case.</p>
+          <a class="buy" data-item-id="firstaid-upgrade" href="https://www.grainger.com/product/5DXY4" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Grainger</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+        </div>
+    </article></div>
+    </section>
+    <section class="section" id="tools">
+      <h2>Tools and recovery</h2>
+      <p class="lede">tires, tape, and temporary emergency repairs</p>
+      <div class="cards">
+    <article class="card" id="inflator-budget">
+      <div class="card-top">
+        <h3>Portable tire inflator</h3>
+        <div class="tags"><span class="tag tag-lean">Lean kit</span><span class="tag tag-complete">Also in complete</span></div>
+      </div>
+      <p class="product-name">Brookstone Automotive Tire Inflator Mini Air Compressor, 12V, 300 PSI</p>
+      <p class="why">A 12-volt inflator can add enough air to a low tire to reach a shop, and many include a gauge. Check the door-jamb pressure, not the number on the tire sidewall.</p>
+      <div class="price-row"><strong>$31.99</strong> <span>at Walmart · pre-tax, as of Nov 24–25, 2026</span></div>
+      <p class="ship">Sold by Walmart in the Nov 25 lookup. Replaced the earlier Amazon Basics inflator ($27.97) so the lean kit can use a verified Walmart page.</p>
+      <a class="buy" data-item-id="inflator-budget" href="https://www.walmart.com/ip/19660667361" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Walmart</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+        <div class="upgrade">
+          <div class="upgrade-kicker">Upgrade option</div>
+          <div class="upgrade-name">AstroAI L2 cordless tire inflator, 6600 mAh battery and 12V cord</div>
+          <div class="price-row"><strong>$54.77</strong> <span>at Walmart</span></div>
+          <p>A cordless inflator still works if you cannot run the car or reach a 12-volt outlet easily.</p>
+          <a class="buy" data-item-id="inflator-upgrade" href="https://www.walmart.com/ip/2402149669" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Walmart</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+        </div>
+    </article>
+    <article class="card" id="sealant-budget">
+      <div class="card-top">
+        <h3>Temporary tire sealant</h3>
+        <div class="tags"><span class="tag tag-lean">Lean kit</span><span class="tag tag-complete">Also in complete</span></div>
+      </div>
+      <p class="product-name">Fix-A-Flat 16-oz aerosol tire sealant, S60420</p>
+      <p class="why">A temporary emergency repair for some small punctures when you cannot safely change the tire. Check whether your tires and sensors allow sealant, and have the tire inspected afterward.</p>
+      <div class="price-row"><strong>$8.49</strong> <span>at Walmart · pre-tax, as of Nov 24–25, 2026</span></div>
+      
+      <a class="buy" data-item-id="sealant-budget" href="https://www.walmart.com/ip/198298503" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Walmart</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+    </article>
+    <article class="card" id="extinguisher-budget">
+      <div class="card-top">
+        <h3>Auto fire extinguisher</h3>
+        <div class="tags"><span class="tag tag-lean">Lean kit</span><span class="tag tag-complete">Also in complete</span></div>
+      </div>
+      <p class="product-name">First Alert AUTO5 car fire extinguisher, UL 5-B:C</p>
+      <p class="why">An appropriately rated UL 5-B:C unit suitable for vehicle storage, with a vehicle mount included. Secure it using an appropriate mounting bracket. In a vehicle fire, evacuate, move away and call 911; prioritize personal safety. Confirm the seller and date code if you order online.</p>
+      <div class="price-row"><strong>$27.08</strong> <span>at Walmart · pre-tax, as of Nov 24–25, 2026</span></div>
+      <p class="ship">Marketplace seller in this lookup; buying the same model in a store is often simpler.</p>
+      <a class="buy" data-item-id="extinguisher-budget" href="https://www.walmart.com/ip/First-Alert-AUTO5-Car-Fire-Extinguisher-UL-rated-5-B-C-Red/16930199" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Walmart</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+    </article>
+    <article class="card" id="tape-budget">
+      <div class="card-top">
+        <h3>Duct tape</h3>
+        <div class="tags"><span class="tag tag-lean">Lean kit</span><span class="tag tag-complete">Also in complete</span></div>
+      </div>
+      <p class="product-name">The Original Duck Tape, 1.88 in. x 55 yd., silver</p>
+      <p class="why">For temporary, non-critical repairs, such as securing loose interior trim.</p>
+      <div class="price-row"><strong>$4.98</strong> <span>at Walmart · pre-tax, as of Nov 24–25, 2026</span></div>
+      
+      <a class="buy" data-item-id="tape-budget" href="https://www.walmart.com/ip/591736470" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Walmart</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+    </article>
+    <article class="card" id="water-budget">
+      <div class="card-top">
+        <h3>Bottled drinking water, 24-count</h3>
+        <div class="tags"><span class="tag">Lean kit</span><span class="tag">Complete kit</span></div>
+      </div>
+      <p class="product-name">Great Value Purified Drinking Water, 16.9 fl oz, 24 Count</p>
+      <p class="why">Essential. A 24-count case is an economical way to buy; pack several bottles in the vehicle and rotate them. You do not need all 24 in the trunk. Move bottles into the cabin in a hard freeze.</p>
+      <div class="price-row"><strong>$3.97</strong> <span>at Walmart · pre-tax, as of Nov 25, 2026</span></div>
+      <a class="buy" data-item-id="water-budget" href="https://www.walmart.com/ip/13448854" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Walmart</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+    </article>
+    <article class="card" id="snacks-budget">
+      <div class="card-top">
+        <h3>Non-perishable snacks</h3>
+        <div class="tags"><span class="tag">Lean kit</span><span class="tag">Complete kit</span></div>
+      </div>
+      <p class="product-name">Non-perishable snacks (granola bars or similar)</p>
+      <p class="why">Essential in all three builds. A single-box snack price was not verified from a fetched product page, so this stays “check current price” and is not in the lean or complete totals.</p>
+      <div class="price-row"><strong>check current price</strong> <span>Walmart or grocery · not in the totals</span></div>
+    </article>
+    <article class="card" id="multitool-complete">
+      <div class="card-top">
+        <h3>Multi-tool</h3>
+        <div class="tags"><span class="tag tag-complete">Complete kit add-on</span></div>
+      </div>
+      <p class="product-name">Swiss Tech Helfen 12-in-1 multi-tool knife</p>
+      <p class="why">A compact tool for cutting, tightening, and small repairs without packing a full toolbox.</p>
+      <div class="price-row"><strong>$27.97</strong> <span>at Walmart · pre-tax, as of Nov 24–25, 2026</span></div>
+      <p class="ship">Sold by Walmart in the Nov 25 lookup. Replaced the earlier PERWIN tool ($20.18, Amazon) to prefer a verified Walmart page.</p>
+      <a class="buy" data-item-id="multitool-complete" href="https://www.walmart.com/ip/5321177671" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Walmart</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+        <div class="upgrade">
+          <div class="upgrade-kicker">Upgrade option</div>
+          <div class="upgrade-name">Gerber Truss 17-in-1 multi-tool</div>
+          <div class="price-row"><strong>$48.45</strong> <span>at Amazon</span></div>
+          <p>A sturdier, better-known multi-tool if you want to upgrade that one piece.</p>
+          <a class="buy" data-item-id="multitool-upgrade" href="https://www.amazon.com/dp/B07DDDM35D" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Amazon</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+        </div>
+    </article>
+    <article class="card" id="towstrap-upgrade">
+      <div class="card-top">
+        <h3>Recovery strap kit</h3>
+        <div class="tags"><span class="tag tag-upgrade">Upgrade option</span></div>
+      </div>
+      <p class="product-name">VEVOR heavy-duty tow strap recovery kit, 3 in. x 30 ft, with sleeves, shackles, and bag</p>
+      <p class="why">Useful only if you know how to use it and stay within the ratings. It is easy to use unsafely. Skip this piece if you are not comfortable with vehicle recovery.</p>
+      <div class="price-row"><strong>$42.90</strong> <span>at Lowe&#x27;s · pre-tax, as of Nov 24–25, 2026</span></div>
+      
+      <a class="buy" data-item-id="towstrap-upgrade" href="https://www.lowes.com/pd/VEVOR-Heavy-Duty-Tow-Strap-Recovery-Kit-3-in-x-30-ft-MBS-36000-lbs-Tree-Saver-Winch-Strap-Triple-Reinforced-Loop-and-Protective-Sleeves-and-Storage-Bag-3-4in-D-Ring-Shackles-for-Truck-Jeep-SUV-ATV/8050480" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Lowe&#x27;s</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+    </article></div>
+    </section>
+    <section class="section" id="comfort,">
+      <h2>Comfort, food, and water</h2>
+      <p class="lede">if you may be waiting longer than you planned</p>
+      <div class="cards">
+    <article class="card" id="food-complete">
+      <div class="card-top">
+        <h3>Food and water kit</h3>
+        <div class="tags"><span class="tag tag-complete">Complete kit add-on</span></div>
+      </div>
+      <p class="product-name">Ready America 2-person 3-day emergency food and water kit</p>
+      <p class="why">If you may be stranded, you need water and food that can sit in the vehicle. The listing describes six 1-liter water cartons and three 2,400-calorie bars, with a 10-year shelf life. In a hard freeze, move water into the cabin so bottles do not split. A cheaper path is grocery-store water and snacks, rotated often.</p>
+      <div class="price-row"><strong>$44.97</strong> <span>at Walmart · pre-tax, as of Nov 24–25, 2026</span></div>
+      
+      <a class="buy" data-item-id="food-complete" href="https://www.walmart.com/ip/791538520" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Walmart</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+    </article>
+    <article class="card card-local">
+      <div class="card-top">
+        <h3>Wet wipes, trash bags, and a roll of toilet paper</h3>
+        <div class="tags"><span class="tag">Buy locally · price unverified</span></div>
+      </div>
+      <p class="why">Official kits include sanitation supplies. Buy these locally and replace them when they dry out.</p>
+    </article></div>
+    </section>
+    <section class="section" id="documents">
+      <h2>Documents and backup navigation</h2>
+      <p class="lede">copies only, plus a map that still works when the phone does not</p>
+      <div class="cards">
+    <article class="card" id="pouch-complete">
+      <div class="card-top">
+        <h3>Document pouch</h3>
+        <div class="tags"><span class="tag tag-complete">Complete kit add-on</span></div>
+      </div>
+      <p class="product-name">Waterproof travel document pouch</p>
+      <p class="why">Carry insurance and registration in the form legally accepted by the applicable state, plus emergency contacts, in a pouch in the vehicle — not Social Security cards or the only copy of important papers. A photocopy or a phone photo may not meet the requirement. This is a natural link to the Just in Case organizer, where the fuller records live.</p>
+      <div class="price-row"><strong>$13.59</strong> <span>at Amazon · pre-tax, as of Nov 24–25, 2026</span></div>
+      
+      <a class="buy" data-item-id="pouch-complete" href="https://www.amazon.com/dp/B0D5HDDD2Z" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Amazon</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+    </article>
+    <article class="card" id="atlas-upgrade">
+      <div class="card-top">
+        <h3>Road atlas</h3>
+        <div class="tags"><span class="tag tag-upgrade">Upgrade option</span></div>
+      </div>
+      <p class="product-name">Rand McNally 2027 Large Scale Road Atlas</p>
+      <p class="why">A printed map still works when GPS and cell service fail. A printed state or local map is a cheaper budget path.</p>
+      <div class="price-row"><strong>$30.75</strong> <span>at Walmart · pre-tax, as of Nov 24–25, 2026</span></div>
+      
+      <a class="buy" data-item-id="atlas-upgrade" href="https://www.walmart.com/ip/19862608654" target="_blank" rel="noopener noreferrer">
+      <span class="buy-text">View at Walmart</span>
+      <span class="link-flag">Retail link — affiliate placeholder</span>
+    </a>
+      
+    </article></div>
+    </section>
+    </div>
+
+    <section class="winter-panel" id="winter">
+      <h2>East Tennessee and mountain winter</h2>
+      <p>This list works anywhere in the United States. If you drive in the Southern Appalachians — around Kingsport, the Tri-Cities, I-26, I-81, and the steep secondary roads that feed them — winter is less about heavy snow accumulation and more about sudden ice, black ice near freezing, and waiting while crews clear interstates and busy state routes first.</p>
+      <ul>
+        <li>Keep the gas tank as full as you reasonably can. A fuller tank also helps keep a fuel line from freezing. If you drive an EV or hybrid, start trips with more charge than you think you need; cold weather reduces range.</li>
+        <li>Before a forecast ice storm, move water into the cabin so bottles do not freeze and split in the trunk, and tell someone your route.</li>
+        <li>Pack the shovel, scraper, gloves, blanket, and traction aid (non-clumping litter or sand) where you can reach them without unloading the whole trunk.</li>
+        <li>Call 911 immediately if you are disabled in an active travel lane. Staying in the vehicle is conditional on safety, especially during fire, flooding, or immediate collision hazards. Exit to a safe location when necessary and possible. Run the engine only intermittently, keep the exhaust pipe clear of snow, and slightly open a window to reduce the risk of carbon monoxide exposure. These precautions do not eliminate risk. Never run the engine in a closed space or with the tailpipe blocked. These points come from TEMA, TDOT, and NHTSA.</li>
+        <li>Check road conditions on TDOT SmartWay or 511 before you go. Increase following distance. Black ice is hard to see when the temperature hovers around freezing.</li>
+      </ul>
+    </section>
+
+    <section class="winter-panel" id="summer">
+      <h2>Extreme summer heat</h2>
+      <p>NHTSA’s summer driving tips are a good short checklist in hot weather too. Heatstroke can happen quickly in a parked vehicle — never leave children or pets unattended in one, even with a window cracked. A child’s body temperature rises faster than an adult’s, and the inside of a vehicle can reach deadly temperatures even on a milder day.</p>
+      <ul>
+        <li>Before a hot-weather trip, check coolant and the rest of the cooling system, belts and hoses, tire pressure (when the tires are cold), and air-conditioning performance.</li>
+        <li>Carry extra drinking water. Some medications cannot safely be stored in vehicles due to temperature fluctuations; follow each label’s limits.</li>
+        <li>Follow manufacturer storage and charging temperature limits for lithium devices. Remove them from parked vehicles when temperatures may exceed those limits. Secure them during travel, and follow manufacturer recharge intervals.</li>
+        <li>If the vehicle breaks down in extreme heat, get to shade or a cooled building if you can do so safely, call for help, and do not overexert yourself trying to push or repair the vehicle.</li>
+      </ul>
+    </section>
+
+    <section class="checks" id="maintain">
+      <div>
+        <h3>Check your vehicle’s existing equipment before purchasing</h3>
+        <ul>
+          <li>Spare tire or the inflator kit your vehicle came with</li>
+          <li>Jack, lug wrench, and a place to kneel</li>
+          <li>Owner’s manual and the door-jamb tire-pressure number</li>
+        </ul>
+        <p class="muted">If your vehicle has a spare tire, practice changing it in a safe location.</p>
+      </div>
+      <div>
+        <h3>Every six months</h3>
+        <ul>
+          <li>Charge the power bank or jump starter according to the manufacturer’s instructions</li>
+          <li>Test the flashlight and check the extinguisher gauge</li>
+          <li>Rotate water and food, replace expired first-aid items, and check that medicines are still within their temperature limits</li>
+          <li>Confirm you still carry insurance and registration in the form legally accepted by the applicable state, and update contact numbers</li>
+          <li>Check the spare tire’s pressure</li>
+        </ul>
+        <p class="muted">TEMA recommends a kit check twice a year. The printable has a refresh calendar for this.</p>
+      </div>
+    </section>
+
+    <section class="cta" id="printable">
+      <div>
+        <p class="kicker" style="color:var(--acc)">Printable PDF · about $7</p>
+        <h2>Get the checklist you can keep in the glove box</h2>
+        <p>A 13-page paid printable (Version 1.1) with no shopping links inside: starter, lean, and complete checklists, essential and optional supply lists, a trunk packing layout, a six-month refresh calendar, winter notes, a short extreme-summer-heat section, a stranded-in-the-vehicle plan, a cut-out glove-box-size family information card, and an Additional resources page. Prices and store links stay on this free page, where they can be updated.</p>
+        <p id="printable-cta"><span class="pending">Gumroad link coming — $7 printable, after Robie publishes it</span></p>
+      </div>
+      <div>
+        <p class="muted" style="color:var(--soft)">The download is a digital PDF only. Print it at home on letter paper, or keep it on your phone. It is not a substitute for this live list.</p>
+      </div>
+    </section>
+
+    <section class="cross" id="organizer">
+      <div>
+        <p class="kicker">Also from RobieWorks</p>
+        <h2>Keep the fuller records in Just in Case</h2>
+        <p>Carry insurance and registration in the form legally accepted by the applicable state, and keep a spare copy in a safe place at home. The Just in Case Family Preparedness Organizer is the place for the fuller record — contacts, document locations, medical notes, and what your family would need to know — finished in eight weekends.</p>
+        <a class="btn" href="https://robieworks.gumroad.com/l/vawur" target="_blank" rel="noopener noreferrer">See the Just in Case organizer</a>
+      </div>
+      <div>
+        <p class="muted">Currently $15 for launch, then $19. A personal record-keeping tool — not a will or legal document. Instant digital download.</p>
+      </div>
+    </section>
+  </div>
+
+  <footer class="site">
+    <div class="wrap">
+      <h2>RobieWorks</h2>
+      <p>Just in Case Car Kit, Version 1.1. This printable was developed by RobieWorks with AI-assisted research and drafting, drawing on publicly available emergency preparedness guidance. The same is true of this page. This guide is for general information only. It is not medical, legal, or automotive-repair advice. Retailer names and product links are for identification and shopping convenience only. Those companies have not sponsored or endorsed this page.</p>
+      <p><strong>Information sources</strong> (these are not shopping links; each was opened and confirmed on November 25, 2026, Eastern Time): <a href="https://www.nhtsa.gov/winter-driving-tips">NHTSA winter driving tips</a>, <a href="https://www.nhtsa.gov/summer-driving-tips">NHTSA summer driving tips</a>, <a href="https://www.ready.gov/">Ready.gov</a>, <a href="https://www.ready.gov/car">Ready.gov Car Safety</a>, <a href="https://www.ready.gov/kit">Ready.gov Build A Kit</a>, <a href="https://www.redcross.org/">American Red Cross</a>, <a href="https://www.redcross.org/take-a-class/resources/articles/car-emergency-kit-what-to-include">Emergency Car Kit article</a>, <a href="https://www.tn.gov/tema.html">Tennessee Emergency Management Agency</a>, <a href="https://www.tn.gov/tema/news/getting-winter-ready--tema-and-tdot-encourage-simple-safety-steps.html">TEMA / TDOT, Getting Winter Ready</a>, <a href="https://smartway.tn.gov/">TDOT SmartWay</a>, and <a href="https://www.aaa.com/autorepair/articles/what-to-have-in-your-car-emergency-kit">AAA, What To Have In Your Car Emergency Kit</a>.</p>
+      <p><strong>Shopping links</strong> for lean and complete product examples are in the kit list above. The starter kit section has no product links.</p>
+      <p>This page does not ask you to create an account or send personal information to RobieWorks. Your browser may still send ordinary technical data to the site host. Product pages you click through have their own privacy practices.</p>
+      <p>Questions: <a href="mailto:robieworkshq@gmail.com">robieworkshq@gmail.com</a></p>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      fetch("products.json")
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          (data.items || []).forEach(function (item) {
+            var url = (item.affiliate_url || "").trim() || item.url;
+            document.querySelectorAll('a[data-item-id="' + item.id + '"]').forEach(function (a) {
+              a.href = url;
+              if ((item.affiliate_url || "").trim()) {
+                a.setAttribute("data-affiliate", "true");
+                var flag = a.querySelector(".link-flag");
+                if (flag) flag.textContent = "Affiliate link — we may earn a commission";
+              }
+            });
+          });
+          var printable = (data.meta && data.meta.printable_url) || "";
+          var slot = document.getElementById("printable-cta");
+          if (printable && slot) {
+            slot.innerHTML = '<a class="btn" href="' + printable + '">Get the $7 printable checklist</a>';
+          }
+        })
+        .catch(function () { /* baked-in retail links still work */ });
+    })();
+  </script>
+</body>
+</html>
