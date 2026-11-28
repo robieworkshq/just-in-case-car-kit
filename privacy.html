@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — RobieWorks</title>
+  <meta name="description" content="How the Just in Case Car Kit site handles information. A static GitHub Pages site operated by RobieWorks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pri: #24505C;
+      --pri-dk: #1A3B44;
+      --acc: #7FA99B;
+      --light: #E6EFEC;
+      --cream: #FBF8F2;
+      --grey: #6F7B80;
+      --gold: #C9973F;
+      --gold-dk: #A67B2C;
+      --txt: #23323A;
+      --white: #ffffff;
+      --soft: #DCE8E4;
+      --banner: #F3E6C8;
+      --line: #d5ddd9;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", "Source Sans Pro", system-ui, sans-serif;
+      color: var(--txt);
+      background: var(--cream);
+      line-height: 1.55;
+    }
+    a { color: var(--pri); }
+    img { max-width: 100%; }
+    .wrap { width: min(1040px, calc(100% - 40px)); margin: 0 auto; }
+    header.site {
+      background: var(--pri);
+      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      box-shadow: 0 2px 12px rgba(26,59,68,.18);
+    }
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+    }
+    .brand {
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: var(--soft);
+      text-decoration: none;
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      opacity: .92;
+    }
+    nav a:hover { text-decoration: underline; }
+    .kicker {
+      font-size: 13px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--acc);
+      font-weight: 700;
+      margin: 0 0 12px;
+    }
+    .page-hero {
+      background: var(--pri);
+      color: var(--white);
+      padding: 48px 0 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: "";
+      position: absolute;
+      right: -120px;
+      top: -160px;
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 70px rgba(255,255,255,.05), 0 0 0 140px rgba(255,255,255,.04), 0 0 0 210px rgba(255,255,255,.03);
+      pointer-events: none;
+    }
+    .page-hero h1 {
+      font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+      font-size: clamp(36px, 6vw, 56px);
+      font-weight: 700;
+      margin: 0 0 10px;
+      line-height: 1.1;
+    }
+    .page-hero .sub {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-style: italic;
+      font-size: clamp(18px, 2.4vw, 22px);
+      color: var(--soft);
+      max-width: 34em;
+      margin: 0;
+    }
+    .article {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 32px 36px 40px;
+      margin: -28px auto 56px;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 8px 24px rgba(26,59,68,.06);
+    }
+    .article h2 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 28px;
+      color: var(--pri);
+      margin: 28px 0 10px;
+    }
+    .article h2:first-child { margin-top: 0; }
+    .article p { margin: 0 0 16px; }
+    .article ul { margin: 0 0 16px; padding-left: 1.2em; }
+    .article li { margin: 0 0 8px; }
+    .effective {
+      font-size: 14px;
+      color: var(--grey);
+      margin: 0 0 22px;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--white);
+      font-weight: 700;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 999px;
+    }
+    .btn:hover { background: var(--gold-dk); }
+    footer.site {
+      background: var(--pri-dk);
+      color: var(--soft);
+      padding: 36px 0 48px;
+      font-size: 14px;
+    }
+    footer.site a { color: var(--acc); }
+    footer.site h2 {
+      color: var(--white);
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin: 0 0 16px;
+    }
+    .footer-nav a {
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .footer-nav a:hover { text-decoration: underline; }
+    @media (max-width: 800px) {
+      .wrap { width: calc(100% - 28px); }
+      .header-row { flex-direction: column; align-items: flex-start; gap: 8px; padding: 12px 0; }
+      nav { gap: 4px 12px; }
+      nav a { font-size: 13px; }
+      .page-hero { padding: 36px 0 48px; }
+      .article { margin-top: -20px; padding: 24px 20px 32px; }
+    }
+
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html">RobieWorks</a>
+      <nav>
+        <a href="index.html#builds">Builds</a>
+        <a href="index.html#starter">Starter kit</a>
+        <a href="index.html#kit">Kit list</a>
+        <a href="index.html#winter">Winter &amp; summer</a>
+        <a href="index.html#printable">Printable</a>
+        <a href="index.html#organizer">Family organizer</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="kicker">RobieWorks</p>
+      <h1>Privacy policy</h1>
+      <p class="sub">A plain-English account of what this site does — and does not — collect.</p>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <article class="article">
+      <p class="effective">Effective date: November 27, 2026</p>
+      <p>This page explains what happens when you visit the Just in Case Car Kit site at <a href="https://robieworkshq.github.io/just-in-case-car-kit/">robieworkshq.github.io/just-in-case-car-kit</a>, which is operated by RobieWorks. Questions: <a href="mailto:robieworkshq@gmail.com">robieworkshq@gmail.com</a>.</p>
+
+      <h2>A simple, static site</h2>
+      <p>This is a static website hosted on GitHub Pages. There is no account to create, no comment section, and no contact form. We do not run our own analytics, advertising pixels, or tracking scripts on this site, and we do not set first-party cookies.</p>
+
+      <h2>If you email us</h2>
+      <p>If you write to <a href="mailto:robieworkshq@gmail.com">robieworkshq@gmail.com</a>, we receive your email address and whatever you include in the message. We use that only to reply and to handle your request. We do not sell this information.</p>
+
+      <h2>What our host may collect</h2>
+      <p>Because the site is hosted on GitHub Pages, GitHub may automatically record ordinary server-log data when you visit, which can include your IP address, browser type, the date and time, and the pages requested. We do not control GitHub’s logging. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub’s Privacy Statement</a>.</p>
+
+      <h2>Fonts and other third parties on this page</h2>
+      <p>This site loads fonts from Google Fonts. When those files load, Google may receive your IP address and standard browser information. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google’s Privacy Policy</a>.</p>
+      <p>This site may also include a site-verification tag used by Impact so they can confirm we operate the site. That tag does not set a cookie by itself.</p>
+
+      <h2>Links to other sites</h2>
+      <p>This page links out to other services, including Gumroad (where we sell our own printables), retailer sites such as Walmart, Pinterest, and public information sources such as Ready.gov. Those sites have their own privacy policies, and we are not responsible for their practices. You can read the policies for <a href="https://gumroad.com/privacy" target="_blank" rel="noopener noreferrer">Gumroad</a>, <a href="https://corporate.walmart.com/privacy-security/walmart-privacy-notice" target="_blank" rel="noopener noreferrer">Walmart</a>, and <a href="https://policy.pinterest.com/privacy-policy" target="_blank" rel="noopener noreferrer">Pinterest</a>.</p>
+      <p>Once shopping links become affiliate links, partners such as Impact and Walmart may set cookies or use similar tools on their own sites to record that you clicked a link and whether a purchase was completed, so a commission can be credited. We do not set those cookies ourselves. You can read the privacy policies of <a href="https://impact.com/privacy-policy/" target="_blank" rel="noopener noreferrer">Impact</a> and Walmart for details.</p>
+
+      <h2>We do not sell your personal information</h2>
+      <p>RobieWorks does not sell the personal information you share with us, including any email you send.</p>
+
+      <h2>Children</h2>
+      <p>This site offers general information for adults putting together a vehicle kit. It is not directed at children.</p>
+
+      <h2>Changes</h2>
+      <p>If we update this policy, we will change the effective date at the top of this page.</p>
+
+      <h2>Contact</h2>
+      <p>RobieWorks<br><a href="mailto:robieworkshq@gmail.com">robieworkshq@gmail.com</a></p>
+    </article>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <h2>RobieWorks</h2>
+      <p class="footer-nav">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="disclosure.html">Affiliate disclosure</a>
+        <a href="privacy.html" aria-current="page">Privacy policy</a>
+      </p>
+      <p>Just in Case Car Kit, Version 1.1. This printable was developed by RobieWorks with AI-assisted research and drafting, drawing on publicly available emergency preparedness guidance. The same is true of this page. This guide is for general information only. It is not medical, legal, or automotive-repair advice. Retailer names and product links are for identification and shopping convenience only. Those companies have not sponsored or endorsed this page.</p>
+      <p>Questions: <a href="mailto:robieworkshq@gmail.com">robieworkshq@gmail.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>

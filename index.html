@@ -345,6 +345,30 @@
       padding: 12px 20px;
       border-radius: 999px;
     }
+    .affiliate-note {
+      background: var(--banner);
+      border: 1px solid #e2d0a4;
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 0 0 22px;
+      font-size: 15px;
+    }
+    .product-own {
+      font-size: 14px;
+      color: var(--soft);
+      margin: 12px 0 0;
+    }
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin: 0 0 16px;
+    }
+    .footer-nav a {
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .footer-nav a:hover { text-decoration: underline; }
     @media (max-width: 800px) {
       .wrap { width: calc(100% - 28px); }
       .header-row { flex-direction: column; align-items: flex-start; gap: 8px; padding: 12px 0; }
@@ -384,7 +408,7 @@
   <div class="wrap">
     <aside class="disclosure" id="disclosure">
       <h2>Please read this first</h2>
-      <p><strong>Affiliate links:</strong> The Starter kit section below has no product links. In the lean and complete lists, some links go to retailer product pages so you can see a real item and an approximate price. They are ordinary retail links for now. When RobieWorks is accepted into an affiliate program, some of these links may become affiliate links. If you buy through an affiliate link, RobieWorks may earn a commission, at no extra cost to you. That commission will be disclosed next to the link. This page is not sponsored by any retailer.</p>
+      <p><strong>Affiliate links:</strong> The Starter kit section below has no product links. In the lean and complete lists, some links go to retailer product pages so you can see a real item and an approximate price. They are ordinary retail links for now. Once Walmart affiliate links are added, this applies: as a Walmart affiliate, I may earn from qualifying purchases at no extra cost to you. Affiliate links will be marked next to the product. The $7 printable checklist is our own RobieWorks product, sold on Gumroad; it is not an affiliate offer. This page is not sponsored by any retailer. See the <a href="disclosure.html">affiliate disclosure</a> for more detail.</p>
       <p><strong>How this page was made:</strong> This printable was developed by RobieWorks with AI-assisted research and drafting, drawing on publicly available emergency preparedness guidance. The same is true of this page. This guide is for general information only. It is not medical, legal, or automotive-repair advice, and it is not a substitute for your vehicle owner’s manual, official emergency guidance, or roadside assistance. Use your own judgment. Informational source links are listed in the Sources section, separate from the shopping links in the kit list.</p>
       <p><strong>Not medical or legal advice</strong>, and not a substitute for roadside assistance. A kit helps you wait for help and handle small problems. It does not make winter mountain driving, or travel in extreme heat, safe. Prices are approximate, pre-tax, and were spot-checked on product pages on November 25, 2026, Eastern Time. Harbor Freight starter prices were checked on product pages that day. They will change. Unverified items say “check current price” and are left out of the totals. Shipping is extra unless a product page said otherwise.</p>
     </aside>
@@ -694,7 +718,7 @@
     </section>
 
     <div id="kit">
-      
+      <p class="affiliate-note">As a Walmart affiliate, I may earn from qualifying purchases at no extra cost to you. Shopping links below are ordinary retail links for now; once affiliate links are added, they will be marked on the product button. The $7 printable checklist is our own RobieWorks product, sold on Gumroad; it is not an affiliate offer.</p>
     <section class="section" id="essentials">
       <h2>Essentials</h2>
       <p class="lede">visibility, power, and communication</p>
@@ -1201,7 +1225,7 @@
 
     <section class="winter-panel" id="winter">
       <h2>East Tennessee and mountain winter</h2>
-      <p>This list works anywhere in the United States. If you drive in the Southern Appalachians — around Kingsport, the Tri-Cities, I-26, I-81, and the steep secondary roads that feed them — winter is less about heavy snow accumulation and more about sudden ice, black ice near freezing, and waiting while crews clear interstates and busy state routes first.</p>
+      <p>This list works anywhere in the United States. If you drive in the Southern Appalachians — around Bristol, Tennessee and the Tri-Cities, I-26, I-81, and the steep secondary roads that feed them — winter is less about heavy snow accumulation and more about sudden ice, black ice near freezing, and waiting while crews clear interstates and busy state routes first.</p>
       <ul>
         <li>Keep the gas tank as full as you reasonably can. A fuller tank also helps keep a fuel line from freezing. If you drive an EV or hybrid, start trips with more charge than you think you need; cold weather reduces range.</li>
         <li>Before a forecast ice storm, move water into the cabin so bottles do not freeze and split in the trunk, and tell someone your route.</li>
@@ -1251,6 +1275,7 @@
         <h2>Get the checklist you can keep in the glove box</h2>
         <p>A 13-page paid printable (Version 1.1) with no shopping links inside: starter, lean, and complete checklists, essential and optional supply lists, a trunk packing layout, a six-month refresh calendar, winter notes, a short extreme-summer-heat section, a stranded-in-the-vehicle plan, a cut-out glove-box-size family information card, and an Additional resources page. Prices and store links stay on this free page, where they can be updated.</p>
         <p id="printable-cta"><span class="pending">Gumroad link coming — $7 printable, after Robie publishes it</span></p>
+        <p class="product-own">This is our own RobieWorks product, sold on Gumroad. It is not an affiliate offer.</p>
       </div>
       <div>
         <p class="muted" style="color:var(--soft)">The download is a digital PDF only. Print it at home on letter paper, or keep it on your phone. It is not a substitute for this live list.</p>
@@ -1273,6 +1298,12 @@
   <footer class="site">
     <div class="wrap">
       <h2>RobieWorks</h2>
+      <p class="footer-nav">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="disclosure.html">Affiliate disclosure</a>
+        <a href="privacy.html">Privacy policy</a>
+      </p>
       <p>Just in Case Car Kit, Version 1.1. This printable was developed by RobieWorks with AI-assisted research and drafting, drawing on publicly available emergency preparedness guidance. The same is true of this page. This guide is for general information only. It is not medical, legal, or automotive-repair advice. Retailer names and product links are for identification and shopping convenience only. Those companies have not sponsored or endorsed this page.</p>
       <p><strong>Information sources</strong> (these are not shopping links; each was opened and confirmed on November 25, 2026, Eastern Time): <a href="https://www.nhtsa.gov/winter-driving-tips">NHTSA winter driving tips</a>, <a href="https://www.nhtsa.gov/summer-driving-tips">NHTSA summer driving tips</a>, <a href="https://www.ready.gov/">Ready.gov</a>, <a href="https://www.ready.gov/car">Ready.gov Car Safety</a>, <a href="https://www.ready.gov/kit">Ready.gov Build A Kit</a>, <a href="https://www.redcross.org/">American Red Cross</a>, <a href="https://www.redcross.org/take-a-class/resources/articles/car-emergency-kit-what-to-include">Emergency Car Kit article</a>, <a href="https://www.tn.gov/tema.html">Tennessee Emergency Management Agency</a>, <a href="https://www.tn.gov/tema/news/getting-winter-ready--tema-and-tdot-encourage-simple-safety-steps.html">TEMA / TDOT, Getting Winter Ready</a>, <a href="https://smartway.tn.gov/">TDOT SmartWay</a>, and <a href="https://www.aaa.com/autorepair/articles/what-to-have-in-your-car-emergency-kit">AAA, What To Have In Your Car Emergency Kit</a>.</p>
       <p><strong>Shopping links</strong> for lean and complete product examples are in the kit list above. The starter kit section has no product links.</p>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — RobieWorks</title>
+  <meta name="description" content="Who is behind the Just in Case Car Kit, why it exists, and how the content is made.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pri: #24505C;
+      --pri-dk: #1A3B44;
+      --acc: #7FA99B;
+      --light: #E6EFEC;
+      --cream: #FBF8F2;
+      --grey: #6F7B80;
+      --gold: #C9973F;
+      --gold-dk: #A67B2C;
+      --txt: #23323A;
+      --white: #ffffff;
+      --soft: #DCE8E4;
+      --banner: #F3E6C8;
+      --line: #d5ddd9;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", "Source Sans Pro", system-ui, sans-serif;
+      color: var(--txt);
+      background: var(--cream);
+      line-height: 1.55;
+    }
+    a { color: var(--pri); }
+    img { max-width: 100%; }
+    .wrap { width: min(1040px, calc(100% - 40px)); margin: 0 auto; }
+    header.site {
+      background: var(--pri);
+      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      box-shadow: 0 2px 12px rgba(26,59,68,.18);
+    }
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+    }
+    .brand {
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: var(--soft);
+      text-decoration: none;
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      opacity: .92;
+    }
+    nav a:hover { text-decoration: underline; }
+    .kicker {
+      font-size: 13px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--acc);
+      font-weight: 700;
+      margin: 0 0 12px;
+    }
+    .page-hero {
+      background: var(--pri);
+      color: var(--white);
+      padding: 48px 0 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: "";
+      position: absolute;
+      right: -120px;
+      top: -160px;
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 70px rgba(255,255,255,.05), 0 0 0 140px rgba(255,255,255,.04), 0 0 0 210px rgba(255,255,255,.03);
+      pointer-events: none;
+    }
+    .page-hero h1 {
+      font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+      font-size: clamp(36px, 6vw, 56px);
+      font-weight: 700;
+      margin: 0 0 10px;
+      line-height: 1.1;
+    }
+    .page-hero .sub {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-style: italic;
+      font-size: clamp(18px, 2.4vw, 22px);
+      color: var(--soft);
+      max-width: 34em;
+      margin: 0;
+    }
+    .article {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 32px 36px 40px;
+      margin: -28px auto 56px;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 8px 24px rgba(26,59,68,.06);
+    }
+    .article h2 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 28px;
+      color: var(--pri);
+      margin: 28px 0 10px;
+    }
+    .article h2:first-child { margin-top: 0; }
+    .article p { margin: 0 0 16px; }
+    .article ul { margin: 0 0 16px; padding-left: 1.2em; }
+    .article li { margin: 0 0 8px; }
+    .effective {
+      font-size: 14px;
+      color: var(--grey);
+      margin: 0 0 22px;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--white);
+      font-weight: 700;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 999px;
+    }
+    .btn:hover { background: var(--gold-dk); }
+    footer.site {
+      background: var(--pri-dk);
+      color: var(--soft);
+      padding: 36px 0 48px;
+      font-size: 14px;
+    }
+    footer.site a { color: var(--acc); }
+    footer.site h2 {
+      color: var(--white);
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin: 0 0 16px;
+    }
+    .footer-nav a {
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .footer-nav a:hover { text-decoration: underline; }
+    @media (max-width: 800px) {
+      .wrap { width: calc(100% - 28px); }
+      .header-row { flex-direction: column; align-items: flex-start; gap: 8px; padding: 12px 0; }
+      nav { gap: 4px 12px; }
+      nav a { font-size: 13px; }
+      .page-hero { padding: 36px 0 48px; }
+      .article { margin-top: -20px; padding: 24px 20px 32px; }
+    }
+
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html">RobieWorks</a>
+      <nav>
+        <a href="index.html#builds">Builds</a>
+        <a href="index.html#starter">Starter kit</a>
+        <a href="index.html#kit">Kit list</a>
+        <a href="index.html#winter">Winter &amp; summer</a>
+        <a href="index.html#printable">Printable</a>
+        <a href="index.html#organizer">Family organizer</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="kicker">RobieWorks</p>
+      <h1>About RobieWorks</h1>
+      <p class="sub">A small, independent project for practical family preparedness.</p>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <article class="article">
+      <p>RobieWorks is a small, independent project by Robie, based in Bristol, Tennessee. The aim is practical family preparedness — lists and printables you can actually finish, without a shopping spiral.</p>
+
+      <h2>Why this car kit exists</h2>
+      <p>The Just in Case Car Kit started as a straightforward question: what should you keep in the vehicle so a breakdown, a winter delay, or a stretch of extreme heat is inconvenient rather than dangerous? The <a href="index.html">free companion page</a> is a national checklist with starter, lean, and complete builds, plus a clear East Tennessee and mountain winter section, so you can put a kit together on a weekend.</p>
+      <p>A $7 printable version of the checklist is sold separately on Gumroad, with no shopping links inside, so it can live in the glove box. Prices and store links stay on the free page, where they can be updated.</p>
+      <p>RobieWorks also makes the <a href="https://robieworks.gumroad.com/l/vawur" target="_blank" rel="noopener noreferrer">Just in Case Family Preparedness Organizer</a>, a home record-keeping printable for contacts, document locations, and the notes a family would need.</p>
+
+      <h2>How this content is made</h2>
+      <p>AI helped with research, writing, and design on this site and the related printables. Robie reviews the work before it is published.</p>
+      <p>Product examples and prices are for identification and shopping convenience. Retailers have not sponsored this page, and this is not a series of paid or sponsored reviews.</p>
+      <p>If you have a question, use the <a href="contact.html">Contact</a> page or email <a href="mailto:robieworkshq@gmail.com">robieworkshq@gmail.com</a>.</p>
+    </article>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <h2>RobieWorks</h2>
+      <p class="footer-nav">
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="disclosure.html">Affiliate disclosure</a>
+        <a href="privacy.html">Privacy policy</a>
+      </p>
+      <p>Just in Case Car Kit, Version 1.1. This printable was developed by RobieWorks with AI-assisted research and drafting, drawing on publicly available emergency preparedness guidance. The same is true of this page. This guide is for general information only. It is not medical, legal, or automotive-repair advice. Retailer names and product links are for identification and shopping convenience only. Those companies have not sponsored or endorsed this page.</p>
+      <p>Questions: <a href="mailto:robieworkshq@gmail.com">robieworkshq@gmail.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
